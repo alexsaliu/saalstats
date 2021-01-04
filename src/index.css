@@ -12,16 +12,33 @@ code {
     monospace;
 }
 
-#App {
-    display: flex;
+.App {
+    padding: 1rem;
 }
 
-.row {
-    display: flex;
+.row td {
     border-bottom: 1px solid #d1d1d1;
 }
 
-.row div {
+th {
+    padding: 0.5rem 1rem;
     font-size: 0.8rem;
-    margin: 0.1rem 0.2rem;
+    text-align: left;
+    width: 4rem;
+}
+
+td {
+    padding: 0.2rem 1rem;
+    font-size: 0.8rem;
+    width: 2rem;
+}
+
+th:nth-child(1), td:nth-child(1) {
+    width: 5rem;
+}
+th:nth-child(2), td:nth-child(2) {
+    width: 6rem;
+}
+th:last-child {
+    width: 6rem;
 }
