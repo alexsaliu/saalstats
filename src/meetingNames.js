@@ -10,7 +10,7 @@ export const meetingNames = [
     'Camden',
     'Fleurieu Milk',
     'Marion',
-    'Mount Gambier',
+    'Gambier',
     'Port Adelaide',
     'Sacred Heart',
     'Bowker Street',

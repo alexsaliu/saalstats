@@ -62,8 +62,12 @@ function App() {
     }
 
     const formatMeeting = (name) => {
-        for (const meet of meetingNames) {
-            if (name.includes(meet)) return meet
+        const lc = name.toLowerCase()
+        for (let meet of meetingNames) {
+            if (lc.includes(meet.toLowerCase())) {
+                if (meet === 'Gambier') meet = 'Mt ' + meet
+                return meet
+            }
         }
         return name
     }
